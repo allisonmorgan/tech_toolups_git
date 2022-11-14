@@ -20,3 +20,5 @@ If it is your first time running git, you'll need to configure a few things. For
 git config --global user.name "Doyle Owl"
 git config --global user.email "dowle@reed.edu"
 ```
+
+You should use your own name and email address. The email address should be the same email you chose when you [set up your Github account](https://github.com/signup). (If you haven't set up a Github account, please do so.)
