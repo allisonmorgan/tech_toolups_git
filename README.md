@@ -45,4 +45,10 @@ cd tech_toolups/
 
 If you type `ls -a` you can see the whole contents of that folder. The `-a` flag returns all files and directories that may be hidden. You should see a `README.md` file that was created automatically, as well as a folder called `.git`. 
 
-Git uses this special subdirectory to store all the information about the project, including the tracked files and sub-directories located within the project’s directory. If we ever delete the `.git` subdirectory, we will lose the project’s history.
+Git uses this special subdirectory to store all the information about the project, including the tracked files. If we ever delete the `.git` subdirectory, we will lose the project’s history.
+
+Let's check that we've got git setup correctly by asking about the status of this project:
+
+```
+git status
+```
