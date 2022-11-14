@@ -52,3 +52,52 @@ Let's check that we've got git setup correctly by asking about the status of thi
 ```
 git status
 ```
+
+## Tracking Changes
+
+Let's create a new .txt file using the command `touch`. Then check how that changed the status of our repository.
+
+```
+touch file.txt
+git status
+```
+
+The final command should list the new untracked file called `file.txt`. Untracked means that git isn't tracking any changes to that file. Let's tell git to record all changes to it with the following:
+
+```
+git add file.txt
+git status
+```
+
+Now, git lists this new file as one of the "changes to be committed." In other words, we've told git that we want to start tracking changes on this file.
+
+Git now knows that it’s supposed to keep track of `file.txt`, but it hasn’t recorded these changes as a commit yet. To get it to do that, we need to run one more command:
+
+```
+git commit -m "Adding new text file"
+
+[main 45f446e] Adding new text file
+1 file changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 file.txt
+```
+
+When we run git commit, git takes everything we have told it to save by using git add and stores a copy permanently inside the special `.git` directory. This permanent copy is called a revision and it has a short identifier `45f446e`. (Your revision may have another identifier.)
+
+Finally, we'll want to push this change up to the remote directory (`https://github.com/<YOUR_GITHUB_USERNAME>/tech_toolups`). To copy our changes from our laptop to our GitHub repo, we can use the following:
+
+```
+git push origin master
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/allisonmorgan/tech_toolups.git
+   74119db..45f446e  main -> main
+```
+
+(If you run into [trouble here](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed#answer-21027728) with authentication, you might need to create a person authentication token. Follow the steps [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) and supply that token as your password when asked.)
+
+Now check out your change to the online directory. If it worked, you should see that our local version of the repository has been pushed up to the repository's "origin" (i.e., the copy on GitHub) and the `file.txt` has been added. Congrats! You've just made your first commit!
