@@ -7,7 +7,7 @@ This document is inspired by materials from the [Software Carpentry](https://swc
 **Learning Objectives:**
 1. Configure git the first time it is used on your computer.
 2. Create a git repository.
-3. Go through the modify-add-commit cycle for one or more files.
+3. Go through the add-commit-push cycle for a file.
 4. Explain how to collaborate with others using git.
 
 ## Setting up git
