@@ -21,4 +21,8 @@ git config --global user.name "Doyle Owl"
 git config --global user.email "dowle@reed.edu"
 ```
 
-You should use your own name and email address. The email address should be the same email you chose when you [set up your Github account](https://github.com/signup). (If you haven't set up a Github account, please do so.)
+You should use your own name and email address. The email address should be the same email you chose when you [set up your Github account](https://github.com/signup). (If you haven't set up a Github account, please do so.) 
+
+If you aren't sure whether you have already added this information to your git config, you can run `git config --list` to see your machine's configuration. The flag `--global` tells Git to use the settings for every project, in your user account, on this computer. There are [a lot more things](https://swcarpentry.github.io/git-novice/02-setup/index.html) you can provide here (e.g., default text editor).
+
+## Creating a repository
