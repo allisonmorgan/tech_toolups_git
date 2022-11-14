@@ -28,3 +28,5 @@ If you aren't sure whether you have already added this information to your git c
 ## Creating a repository
 
 Once git is configured, we can start using it to share code on [GitHub](https://github.com). There is more than one way to create a repository, I usually start from the web UI and [follow these steps](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository).
+
+For the purposes of this exercise, call your new public repository (or "repo" for short): `tech_toolups`. Check the box that says to add a README file. You do not need to [choose a license](https://choosealicense.com) right now.
