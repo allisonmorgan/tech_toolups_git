@@ -53,7 +53,7 @@ Let's check that we've got git setup correctly by asking about the status of thi
 git status
 ```
 
-## Tracking Changes
+## Tracking changes
 
 Let's create a new .txt file using the command `touch`. Then check how that changed the status of our repository.
 
