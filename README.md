@@ -5,7 +5,7 @@ Git is powerful and complicated. We could spend a whole day talking about git, b
 This document is inspired by materials from the [Software Carpentry](https://swcarpentry.github.io/git-novice/index.html) foundation and Rochelle Terman's [Introduction to Computational Tools & Techniques for Social Research](https://github.com/rochelleterman/PS239T). If you are hoping to learn more, these are great places to start.
 
 **Learning Objectives:**
-1. Configure git for the first time it is used on your computer.
+1. Configure git the first time it is used on your computer.
 2. Create a git repository.
 3. Go through the modify-add-commit cycle for one or more files.
 4. Explain how to collaborate with others using git.
@@ -23,6 +23,8 @@ git config --global user.email "dowle@reed.edu"
 
 You should use your own name and email address. The email address should be the same email you chose when you [set up your Github account](https://github.com/signup). (If you haven't set up a Github account, please do so.) 
 
-If you aren't sure whether you have already added this information to your git config, you can run `git config --list` to see your machine's configuration. The flag `--global` tells Git to use the settings for every project, in your user account, on this computer. There are [a lot more things](https://swcarpentry.github.io/git-novice/02-setup/index.html) you can provide here (e.g., default text editor).
+If you aren't sure whether you have already added this information to your git config, you can run `git config --list` to see your machine's configuration. The flag `--global` tells git to use the settings for every project, in your user account, on this computer. There are [a lot more things](https://swcarpentry.github.io/git-novice/02-setup/index.html) you can provide here (e.g., default text editor).
 
 ## Creating a repository
+
+Once git is configured, we can start using it to share code on [GitHub](https://github.com). There is more than one way to create a repository, I usually start from the web UI and [follow these steps](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository).
