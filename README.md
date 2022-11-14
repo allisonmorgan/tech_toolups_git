@@ -69,9 +69,7 @@ git add file.txt
 git status
 ```
 
-Now, git lists this new file as one of the "changes to be committed." In other words, we've told git that we want to start tracking changes on this file.
-
-Git now knows that it’s supposed to keep track of `file.txt`, but it hasn’t recorded these changes as a commit yet. To get it to do that, we need to run one more command:
+Now, git lists this new file as one of the "changes to be committed." In other words, we've told git that we want to start tracking changes on this file. Now git knows that it’s supposed to keep track of `file.txt`, but it hasn’t recorded these changes as a commit yet. To get it to do that, we need to run one more command:
 
 ```
 git commit -m "Adding new text file"
@@ -110,6 +108,22 @@ You can (I always do) use the command `git status` in between these steps to mak
 
 ## Ignoring Things
 
+You might be working on a project with sensitive data or very large files or working in a language that creates intermediary or hidden files (e.g., `.ipynb_checkpoints`). In which case you might not want to commit these files to your repository.
+
+Let's say you made a fictious sensitive data set called `sensitive_deanonymized_dataset.csv`
+
+```
+touch sensitive_deanonymized_dataset.csv
+git status
+```
+
+You'll now see that new file is untracked. When you have lots of files you want to ignore, this list can get extremely long, and could distract us from changes that actually matter, so let's tell git to ignore them. Let's change our `.gitignore` file to ignore this dataset
+
+```
+vim .gitignore
+```
+
+And add a new line to the file with `sensitive_deanonymized_dataset.csv`. Once we have created this file, and added the file we want to ignore, the output of git status no longer lists the file (though it may list the `.gitignore` file now). Add, commit, and push the changes to the `.gitignore` file to record these changes.
 
 ## Collaborating
 
