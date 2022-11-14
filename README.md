@@ -84,7 +84,7 @@ When we run git commit, git takes everything we have told it to save by using gi
 Finally, we'll want to push this change up to the remote directory (`https://github.com/<YOUR_GITHUB_USERNAME>/tech_toolups`). To copy our changes from our laptop to our GitHub repo, we can use the following:
 
 ```
-git push origin master
+git push origin main
 
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
