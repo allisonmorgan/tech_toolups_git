@@ -100,4 +100,16 @@ To https://github.com/allisonmorgan/tech_toolups.git
 
 (If you run into [trouble here](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed#answer-21027728) with authentication, you might need to create a person authentication token. Follow the steps [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) and supply that token as your password when asked.)
 
-Now check out your change to the online directory. If it worked, you should see that our local version of the repository has been pushed up to the repository's "origin" (i.e., the copy on GitHub) and the `file.txt` has been added. Congrats! You've just made your first commit!
+Now check out your change to the online directory. If it worked, you should see that our local version of the repository has been pushed up to the repository's "origin" (i.e., the copy on GitHub) and the `file.txt` has been added. Congrats! You've just made your first commit! Remember this basic workflow, after you've made your changes:
+
+1. `git add .` (The period adds all changed files. It's typically safer to add individual files here like we did above)
+2. `git commit -m "<COMMIT_MESSAGE>"`
+3. `git push origin main`
+
+You can (I always do) use the command `git status` in between these steps to make sure that you are (I am) still in the right spot.
+
+## Ignoring Things
+
+
+## Collaborating
+
