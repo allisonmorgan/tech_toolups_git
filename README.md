@@ -167,6 +167,6 @@ $ git push
 
 ### Submit a pull request
 
-Navigate to your GitHub repo (online) and check out your change! Remember when you forked the repository originally? That means that your repository is different from mine, and from everybody elses. What if you want to share your change with others?
+Navigate to your GitHub repo (online) and check out your change. Remember when you forked the repository originally? That means that your repository is different from mine, and from everybody elses. What if you want to share your change with others?
 
 To do this, navigate to your GitHub repository and click the green icon to submit a pull request. After you submit, I have the option to accept.
