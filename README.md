@@ -30,3 +30,15 @@ If you aren't sure whether you have already added this information to your git c
 Once git is configured, we can start using it to share code on [GitHub](https://github.com). There is more than one way to create a repository, I usually start from the web UI and [follow these steps](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository).
 
 For the purposes of this exercise, call your new public repository (or "repo" for short): `tech_toolups`. Check the box that says to add a README file. You do not need to [choose a license](https://choosealicense.com) right now.
+
+Next, clone this repo onto your machine in a location you will remember. [Here](https://help.github.com/articles/cloning-a-repository/) are some more detailed instructions on how to do that, but typically something like the following will do it:
+
+```
+git clone https://github.com/<YOUR_GITHUB_USERNAME>/tech_toolups.git
+```
+
+Next, navigate into that repository with
+
+```
+cd tech_toolups
+```
