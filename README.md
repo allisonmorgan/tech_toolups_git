@@ -21,7 +21,7 @@ git config --global user.name "Doyle Owl"
 git config --global user.email "dowle@reed.edu"
 ```
 
-You should use your own name and email address. The email address should be the same email you chose when you [set up your Github account](https://github.com/signup). (If you haven't set up a Github account, please do so.) 
+You should use your own name and email address. The email address should be the same email you chose when you [set up your Github account](https://github.com/signup). (If you haven't set up a GitHub account, please do so.) 
 
 If you aren't sure whether you have already added this information to your git config, you can run `git config --list` to see your machine's configuration. The flag `--global` tells git to use the settings for every project, in your user account, on this computer. There are [a lot more things](https://swcarpentry.github.io/git-novice/02-setup/index.html) you can provide here (e.g., default text editor).
 
@@ -127,3 +127,46 @@ And add a new line to the file with `sensitive_deanonymized_dataset.csv`. Once w
 
 ## Collaborating
 
+The benefits of version control really shine when we begin to collaborate with other people. I've created a directory in this GitHub repo called `git_ideas`. We're going to collaborate on this directory using git to generate ideas for how you might use git beyond this session.
+
+There are two main ways to collaborate on Github: (1) adding individual collaborators to a project, or (2) the fork & pull model.
+
+The first method adds users to your project, giving them full permissions to make changes. When you do this, collaborating is very similar to the workflow described above. The second method allows repository owners to accept individual contributions from users without granting them full access. Fork & pull involves the following steps:
+
+### Fork an existing repo
+
+The first step in in this workflow is to fork an existing repository. A fork is a copy of a repository that you manage yourself. Forks let you make changes to a project without affecting the original repository. To fork a repo:
+
+On GitHub, navigate to `allisonmorgan/tech_toolups_git`. In the top-right corner of the page, click `Fork`. Now you have a fork of the original repo in `<YOUR_GITHUB_USERNAME>/tech_toolups_git`.
+
+### Commit a change
+
+Next, you'll clone your fork onto your computer. On GitHub, navigate to your fork of the `tech_toolups_git` repository. On the right sidebar of your fork's repository page, copy the clone URL for your fork.
+
+Next, clone this repo onto your machine in a location you will remember.
+```
+git clone https://github.com/<YOUR_GITHUB_USERNAME>/tech_toolups_git
+```
+
+We're now ready to make a change to the repo. Create a file in `git_ideas` directory named after yourself.
+```
+cd tech_toolups_git
+$ touch git_ideas/<YOUR_NAME>.md
+```
+Open up that file in any text editor (e.g., vim, vscode, textedit) and add one sentence describing a project you might use git for.
+
+Files with the extension .md are called markdown files. [Markdown](https:/ /help.github.com/articles/markdown-basics/) is a markup language used to convert plain text to HTML and many other formats. It's basically a way to add markup to a text (making things bold, lists, links, etc) using very simple syntax. It is often used in README files in software packages. 
+
+Then add, commit, and push the change.
+```
+git status
+git add git_ideas/<YOUR_NAME>.md
+$ git commit -m "My git project idea"
+$ git push
+```
+
+### Submit a pull request
+
+Navigate to your GitHub repo (online) and check out your change! Remember when you forked the repository originally? That means that your repository is different from mine, and from everybody elses. What if you want to share your change with others?
+
+To do this, navigate to your GitHub repository and click the green icon to submit a pull request. After you submit, I have the option to accept.
