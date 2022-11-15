@@ -1,0 +1,1 @@
+Use git to track high altitude recipe adjustments
